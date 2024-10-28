@@ -35,7 +35,7 @@ default: all
 
 platform?=mac
 
-CCFLAGS += -g -Os -w -ffreestanding -Wno-narrowing -Wl,-e,__Z4mainv
+CCFLAGS += -g -Os -w -Wno-narrowing
 
 include Makefile.common
 

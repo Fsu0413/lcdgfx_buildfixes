@@ -35,7 +35,7 @@ default: all
 
 platform?=linux
 
-CCFLAGS += -g -Os -w -ffreestanding
+CCFLAGS += -g -Os -w
 
 ifeq ($(ADAFRUIT),y)
 INCLUDES += -I../src/lcd_hal/linux/arduino

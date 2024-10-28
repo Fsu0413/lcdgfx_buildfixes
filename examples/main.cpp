@@ -29,7 +29,16 @@
 extern void setup(void);
 extern void loop(void);
 
-void main(void)
+#ifndef __STDC_HOSTED__
+#error "lcdgfx requires C++11 / C99, yet no __STDC_HOSTED__ as a macro is defined. Please confirm your environment"
+#endif
+
+#if __STDC_HOSTED__ == 1
+int
+#else
+void
+#endif
+main(void)
 {
     setup();
     for(;;)

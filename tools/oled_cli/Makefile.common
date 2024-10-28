@@ -61,7 +61,7 @@ INCLUDES += \
 
 CXXFLAGS +=  -fno-rtti
 
-CCFLAGS += -MD -g -Os -w -ffreestanding $(INCLUDES) -Wall -Werror \
+CCFLAGS += -MD -g -Os -w $(INCLUDES) -Wall -Werror \
 	-Wl,--gc-sections -ffunction-sections -fdata-sections \
 	$(EXTRA_CCFLAGS)
 

@@ -35,6 +35,6 @@ default: all
 
 platform?=linux
 
-CCFLAGS += -g -Os -w -ffreestanding
+CCFLAGS += -g -Os -w
 
 include Makefile.common
