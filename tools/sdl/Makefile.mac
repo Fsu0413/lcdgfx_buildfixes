@@ -35,7 +35,7 @@ CPPFLAGS += -I.
 
 CPPFLAGS += -g -Os -Wall -Werror -ffunction-sections -fdata-sections \
 	-fno-exceptions -Wno-error=deprecated-declarations \
-	$(EXTRA_CPPFLAGS)
+	$(EXTRA_CPPFLAGS) $(shell sdl2-config --cflags | sed 's/SDL2 / /g')
 
 CFLAGS += -std=c99
 
@@ -51,6 +51,7 @@ OBJS = \
 	sdl_il9163.o \
 	sdl_ili9341.o \
 	sdl_pcd8544.o \
+	sdl_sh1107.o \
 
 ####################### Compiling library #########################
 
